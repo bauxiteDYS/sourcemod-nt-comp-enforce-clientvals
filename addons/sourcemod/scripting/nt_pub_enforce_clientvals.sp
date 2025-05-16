@@ -10,7 +10,7 @@ char g_sPluginTag[] = "[PUB CVARS]";
 
 public Plugin myinfo = {
     name        = "NT Enforce Pub Values",
-    author      = "Rain, pub for by bauxite",
+    author      = "Rain, pub fork by bauxite",
     description = "Enforce some client cvar values for competitive play.",
     version     = PLUGIN_VERSION,
     url         = "https://github.com/Rainyan/sourcemod-nt-comp-enforce-clientvals"
