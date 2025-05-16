@@ -6,7 +6,7 @@
 
 #define PLUGIN_VERSION "0.2.2"
 
-char g_sPluginTag[] = "[COMP CVARS]";
+char g_sPluginTag[] = "[PUB CVARS]";
 
 public Plugin myinfo = {
     name        = "NT Enforce Pub Values",
