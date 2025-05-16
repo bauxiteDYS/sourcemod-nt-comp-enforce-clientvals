@@ -9,8 +9,8 @@
 char g_sPluginTag[] = "[COMP CVARS]";
 
 public Plugin myinfo = {
-    name        = "NT Enforce Comp Values",
-    author      = "Rain",
+    name        = "NT Enforce Pub Values",
+    author      = "Rain, pub for by bauxite",
     description = "Enforce some client cvar values for competitive play.",
     version     = PLUGIN_VERSION,
     url         = "https://github.com/Rainyan/sourcemod-nt-comp-enforce-clientvals"
@@ -18,14 +18,12 @@ public Plugin myinfo = {
 
 // Names of the cvars, followed by the value that is enforced for them.
 char g_enforcedVals[][][] = {
-    { "r_shadowrendertotexture", "1" },  // Player cvar to monitor, followed by the value it must hold.
-    { "v_vmtweak", "0" },
     { "net_showevents", "0"},
 };
 
 public void OnPluginStart()
 {
-    CreateTimer(1.0, Timer_CheckEnforcedVals, _, TIMER_REPEAT);
+    CreateTimer(10.0, Timer_CheckEnforcedVals, _, TIMER_REPEAT);
 }
 
 public Action Timer_CheckEnforcedVals(Handle timer)
