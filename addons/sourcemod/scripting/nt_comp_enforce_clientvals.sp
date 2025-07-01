@@ -4,7 +4,7 @@
 #pragma semicolon 1
 #pragma newdecls required
 
-#define PLUGIN_VERSION "0.2.2"
+#define PLUGIN_VERSION "0.2.2.b.ss25"
 
 char g_sPluginTag[] = "[COMP CVARS]";
 
